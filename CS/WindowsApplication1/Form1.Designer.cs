@@ -23,15 +23,8 @@ namespace WindowsApplication1 {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.dataSet11 = new WindowsApplication1.DataSet1();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataSet11
-            // 
-            this.dataSet11.DataSetName = "DataSet1";
-            this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // simpleButton1
             // 
@@ -50,15 +43,11 @@ namespace WindowsApplication1 {
             this.Controls.Add(this.simpleButton1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private DataSet1 dataSet11;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

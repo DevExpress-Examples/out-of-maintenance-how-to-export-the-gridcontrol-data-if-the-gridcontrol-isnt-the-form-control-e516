@@ -1,7 +1,7 @@
 Imports Microsoft.VisualBasic
 Imports System
 Namespace WindowsApplication1
-	Public Partial Class Form1
+	Partial Public Class Form1
 		''' <summary>
 		''' Required designer variable.
 		''' </summary>
@@ -12,7 +12,7 @@ Namespace WindowsApplication1
 		''' </summary>
 		''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
 		Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-			If disposing AndAlso (Not components Is Nothing) Then
+			If disposing AndAlso (components IsNot Nothing) Then
 				components.Dispose()
 			End If
 			MyBase.Dispose(disposing)
@@ -25,15 +25,8 @@ Namespace WindowsApplication1
 		''' the contents of this method with the code editor.
 		''' </summary>
 		Private Sub InitializeComponent()
-			Me.dataSet11 = New WindowsApplication1.DataSet1()
 			Me.simpleButton1 = New DevExpress.XtraEditors.SimpleButton()
-			CType(Me.dataSet11, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.SuspendLayout()
-			' 
-			' dataSet11
-			' 
-			Me.dataSet11.DataSetName = "DataSet1"
-			Me.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
 			' 
 			' simpleButton1
 			' 
@@ -52,15 +45,11 @@ Namespace WindowsApplication1
 			Me.Controls.Add(Me.simpleButton1)
 			Me.Name = "Form1"
 			Me.Text = "Form1"
-'			Me.Load += New System.EventHandler(Me.Form1_Load);
-			CType(Me.dataSet11, System.ComponentModel.ISupportInitialize).EndInit()
 			Me.ResumeLayout(False)
 
 		End Sub
 
 		#End Region
-
-		Private dataSet11 As DataSet1
 		Private WithEvents simpleButton1 As DevExpress.XtraEditors.SimpleButton
 	End Class
 End Namespace
